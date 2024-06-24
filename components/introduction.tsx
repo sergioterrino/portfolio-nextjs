@@ -36,7 +36,7 @@ const Introduction = () => {
               hover:shadow-white/50 cursor-pointer'>
               Ver proyectos
             </Link>
-            <Link href="https://www.linkedin.com/in/sergioterrino/"
+            <Link href="https://www.linkedin.com/in/sergioterrino/" target="_blank"
               className='font-bold text-lg text-center text-secondary p-4 transition-all w-fit border-2 border-secondary 
               rounded-full hover:shadow-lg hover:shadow-secondary cursor-pointer'>
               Contacta conmigo
