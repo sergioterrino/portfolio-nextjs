@@ -262,7 +262,7 @@ export const dataPortfolio = [
         description: ["Javascript", "Html", "Css"],
         image: "/adivinaquien.png",
         urlGithub: "",
-        urlDemo: "",
+        urlDemo: "https://adivinaquien.netlify.app/",
     },
     {
         id: 1,
@@ -270,7 +270,7 @@ export const dataPortfolio = [
         description: ["Angular", "Typescript", "Html", "Css"],
         image: "/adivinadonde1.png",
         urlGithub: "",
-        urlDemo: "",
+        urlDemo: "https://adivinadonde.netlify.app/",
     },
     {
         id: 3,

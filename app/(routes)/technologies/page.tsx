@@ -32,7 +32,7 @@ const TechnologiesPage = () => {
           <SliderTechnologies data={dataTools} />
         </div>
       </div>
-      <AvatarPortfolio />
+      {/* <AvatarPortfolio /> */}
     </Container>
   );
 }
