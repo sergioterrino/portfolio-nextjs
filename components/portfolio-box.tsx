@@ -24,6 +24,8 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
   // Estado para controlar la visibilidad del popover
   const [showPopover, setShowPopover] = useState(false);
 
+  const [showPopoverDemo, setShowPopoverDemo] = useState(false);
+
   // Función para manejar el click en el botón de Github
   const handleClickGithub = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (urlGithub === "") {
@@ -33,6 +35,16 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
         setShowPopover(false); // Ocultar el popover después de 3 segundos
       }, 3000);
       // toast.error("El repositorio de este proyecto es privado");
+    }
+  }
+
+  const checkUrlDemo = (e: React.MouseEvent) => {
+    if (!urlDemo) {
+      e.preventDefault();
+      setShowPopoverDemo(true);
+      setTimeout(() => {
+        setShowPopoverDemo(false);
+      }, 3000);
     }
   }
 
@@ -70,6 +82,12 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
           </div>
         )}
 
+        {showPopoverDemo && (
+          <div className="absolute bottom-48 left-50% mt-2 p-4 bg-gray-600 text-white text-xl rounded-lg shadow-lg z-10">
+            Actualmente este proyecto es privado
+          </div>
+        )}
+
         <ToastContainer
           position="top-center"
           autoClose={3000}
@@ -86,6 +104,7 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
           href={urlDemo}
           target="_blank"
           className="p-2 transition duration-150 rounded-lg bg-secondary hover:bg-secondary/80"
+          onClick={checkUrlDemo}
         >
           Live demo
         </Link>

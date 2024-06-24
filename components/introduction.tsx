@@ -8,8 +8,8 @@ const Introduction = () => {
   return (
     <div className='z-20 w-full bg-darkBg/60'>
       <div className="z-20 grid items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
-        <Image src="/images/home-4.png" priority alt='profile picture' width="450" height="450"
-          className='mx-auto' />
+        <Image src="/images/avatar2.png" priority alt='profile picture' width="450" height="450"
+          className='mx-auto pt-4' />
         <div className="flex flex-col justify-center max-w-lg">
           <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Si puedes pensarlo,
             <TypeAnimation
@@ -30,14 +30,14 @@ const Introduction = () => {
             También estoy comenzando a crear contenido en redes, pues ya saben lo que dicen:&nbsp;  
             <span className='font-bold'>&quot;Uno enseña, dos aprenden&quot;</span>. <br />
           </p>
-          <div className="flex item-center justify-center gap-7 md:justify-start md:gap-10">
-            <Link href="/projects"
-              className='font-bold text-lg p-4 transition-all w-fit border-2 rounded-full hover:shadow-lg 
+          <div className="flex item-center justify-center gap-7 md:justify-start md:gap-10 mb-8 sm:mb-0">
+            <Link href="/portfolio"
+              className='font-bold text-lg text-center p-4 transition-all w-fit border-2 rounded-full hover:shadow-lg 
               hover:shadow-white/50 cursor-pointer'>
               Ver proyectos
             </Link>
-            <Link href="/contact"
-              className='font-bold text-lg text-secondary p-4 transition-all w-fit border-2 border-secondary 
+            <Link href="/"
+              className='font-bold text-lg text-center text-secondary p-4 transition-all w-fit border-2 border-secondary 
               rounded-full hover:shadow-lg hover:shadow-secondary cursor-pointer'>
               Contacta conmigo
             </Link>

@@ -1,31 +1,31 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Github, Crop, Pencil, Computer, Book, Rocket, Speech } from "lucide-react";
 
 export const socialNetworks = [
-    {
-        id: 1,
-        logo: <Youtube size={30} strokeWidth={1} />,
-        src: "#!",
-    },
+    // {
+    //     id: 1,
+    //     logo: <Youtube size={30} strokeWidth={1} />,
+    //     src: "#!",
+    // },
     {
         id: 2,
         logo: <Linkedin size={30} strokeWidth={1} />,
-        src: "#!",
+        src: "https://www.linkedin.com/in/sergioterrino/",
     },
-    {
-        id: 3,
-        logo: <Twitter size={30} strokeWidth={1} />,
-        src: "#!",
-    },
+    // {
+    //     id: 3,
+    //     logo: <Twitter size={30} strokeWidth={1} />,
+    //     src: "#!",
+    // },
     {
         id: 4,
-        logo: <Rss size={30} strokeWidth={1} />,
-        src: "#!",
+        logo: <Github size={30} strokeWidth={1} />,
+        src: "https://github.com/sergioterrino",
     },
-    {
-        id: 5,
-        logo: <Twitch size={30} strokeWidth={1} />,
-        src: "#!",
-    },
+    // {
+    //     id: 5,
+    //     logo: <Twitch size={30} strokeWidth={1} />,
+    //     src: "#!",
+    // },
 ];
 
 
@@ -54,12 +54,12 @@ export const itemsNavbar = [
         icon: <CodeSquare size={25} color="#fff" strokeWidth={1} />,
         link: "/portfolio",
     },
-    {
-        id: 5,
-        title: "Home",
-        icon: <Speech size={25} color="#fff" strokeWidth={1} />,
-        link: "/testimonials",
-    },
+    // {
+    //     id: 5,
+    //     title: "Home",
+    //     icon: <Speech size={25} color="#fff" strokeWidth={1} />,
+    //     link: "/testimonials",
+    // },
 ];
 
 export const dataAboutPage = [
@@ -262,7 +262,7 @@ export const dataPortfolio = [
         description: ["Javascript", "Html", "Css"],
         image: "/adivinaquien.png",
         urlGithub: "",
-        urlDemo: "www.github.com/",
+        urlDemo: "",
     },
     {
         id: 1,
@@ -270,7 +270,7 @@ export const dataPortfolio = [
         description: ["Angular", "Typescript", "Html", "Css"],
         image: "/adivinadonde1.png",
         urlGithub: "",
-        urlDemo: "www.github.com/",
+        urlDemo: "",
     },
     {
         id: 3,
@@ -278,15 +278,15 @@ export const dataPortfolio = [
         description: ["Java", "Spring Boot", "Angular", "Spring Security"],
         image: "/politik.png",
         urlGithub: "https://github.com/sergioterrino/politik",
-        urlDemo: "www.github.com/",
+        urlDemo: "",
     },
     {
         id: 4,
         title: "Ionic mobile app",
         description: ["Ionic", "Firebase", "Angular", "Typescript"],
-        image: "/seres.png",
+        image: "/seres2.jpg",
         urlGithub: "",
-        urlDemo: "www.github.com/",
+        urlDemo: "",
     },
     // {
     //     id: 5,
