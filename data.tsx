@@ -278,7 +278,7 @@ export const dataPortfolio = [
         description: ["Java", "Spring Boot", "Angular", "Spring Security"],
         image: "/politik.png",
         urlGithub: "https://github.com/sergioterrino/politik",
-        urlDemo: "https://stb-politik.netlify.app/",
+        urlDemo: "",
     },
     {
         id: 4,
