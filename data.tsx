@@ -309,13 +309,6 @@ export const dataPortfolio = [
     //     urlGithub: "#!",
     //     urlDemo: "#!",
     // },
-    // {
-    //     id: 8,
-    //     title: "E-commerce web",
-    //     image: "/image-8.jpg",
-    //     urlGithub: "#!",
-    //     urlDemo: "#!",
-    // }
 ];
 
 export const dataTestimonials = [
