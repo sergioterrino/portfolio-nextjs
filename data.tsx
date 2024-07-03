@@ -268,7 +268,7 @@ export const dataPortfolio = [
         id: 1,
         title: "Juego online - Guess Where?",
         description: ["Angular", "Typescript", "Html", "Css"],
-        image: "/adivinadonde1.png",
+        image: "/adivinadonde2.png",
         urlGithub: "",
         urlDemo: "https://adivinadonde.netlify.app/",
     },
