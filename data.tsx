@@ -268,7 +268,7 @@ export const dataPortfolio = [
         id: 1,
         title: "Juego online - Guess Where?",
         description: ["Angular", "Typescript", "Html", "Css"],
-        image: "/adivinadonde1.png",
+        image: "/adivinadonde2.png",
         urlGithub: "",
         urlDemo: "https://adivinadonde.netlify.app/",
     },
@@ -278,7 +278,7 @@ export const dataPortfolio = [
         description: ["Java", "Spring Boot", "Angular", "Spring Security"],
         image: "/politik.png",
         urlGithub: "https://github.com/sergioterrino/politik",
-        urlDemo: "",
+        urlDemo: "https://stb-politik.netlify.app/",
     },
     {
         id: 4,
