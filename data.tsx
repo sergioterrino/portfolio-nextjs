@@ -1,4 +1,5 @@
 import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Github, Crop, Pencil, Computer, Book, Rocket, Speech } from "lucide-react";
+import { title } from "process";
 
 export const socialNetworks = [
     // {
@@ -64,31 +65,30 @@ export const itemsNavbar = [
 
 export const dataAboutPage = [
     {
-        id: 4,
+        id: 2,
         title: "FCT - Software Developer",
         subtitle: "Tier1, S.A",
-        description: "Desarrollo de nuevas funcionalidades y customizaciones para clientes de Comerzzia. Resolución de gaps en el software. Manejo de incidencias. ",
-        date: "03/24 - 06/24",
-    },
-    {
-        id: 3,
-        title: "Prácticas 2º curso",
-        subtitle: "Tier1, S.A",
-        description: "Creación de APIs con Spring y SpringBoot para la integración en comerzzia. Resolución de incidencias y mejoras en el software. Jaspert Reports para la generación de informes. ",
-        date: "10/23 - 03/24",
-    },
-    {
-        id: 2,
-        title: "Prácticas 1er curso",
-        subtitle: "Tier1, S.A",
-        description: "Inicio de proyecto en Comerzzia (software propio de Tier1) el cual es una plataforma modular para todos los procesos de venta en el comercio que permite a los retailers optimizar las experiencias de compra de sus clientes.",
-        date: "03/23 - 06/23",
+        description: [
+            "Desarrollo en Comerzzia, una plataforma modular para el comercio retail.",
+            "Customizaciones de Backoffices para clientes con Java 8/11, Spring, JSP, Javascript, MySQL, Hibernate.",
+            "Personalizar el POS de los clientes con Java 8/11, SpringBoot, JavaFX, FXML, MyBatis.",
+            "Desarrollo de API REST con SpringBoot y Spring.",
+            "Resolución de incidencias.",
+            "Generar informes con Jaspert iReports."
+        ],
+        date: "06/23 - 06/24",
     },
     {
         id: 1,
         title: "CFGS Desarrollo de Aplicaciones Web",
         subtitle: "IES Sotero Hernández",
-        description: "Formación Dual (966 horas en Centros de Trabajo). Diseño y desarrollo de sitios web y aplicaciones interactivas. Administración de servidores de aplicaciones y bases de datos. Empresa e Iniciativa Emprendedora. Proyecto Integrado de Desarrollo de Aplicaciones Web.",
+        description: [
+            "Formación Dual (966 horas en Centros de Trabajo).",
+            "Diseño y desarrollo de sitios web y aplicaciones interactivas.",
+            "Administración de servidores de aplicaciones y bases de datos.",
+            "Empresa e Iniciativa Emprendedora.",
+            "Proyecto Integrado de Desarrollo de Aplicaciones Web."
+        ],
         date: "09/22 - 06/24",
     },
 ]
@@ -108,6 +108,7 @@ export const dataCounter = [
         lineRight: true,
         lineRightMobile: true,
     },
+    // Lenguajes --> Java, Ts, Js, SQL, Py,
     // {
     //     id: 1,
     //     endCounter: 80,
@@ -124,11 +125,14 @@ export const dataCounter = [
     },
     {
         id: 4,
-        endCounter: 6,
+        endCounter: 12,
         text: "Frameworks",
         lineRight: false,
         lineRightMobile: false,
     },
+    // Frameworks --> Spring, SpringBoot, JSP, JavaFX, MyBatis, Hibernate,  
+    // Angular, Ionic, Express, React, NextJs, TailwindCSS
+
     // {
     //     id: 3,
     //     endCounter: 30,
@@ -214,6 +218,31 @@ export const dataFrameworks = [
         title: "React",
         src: "/react.png",
     },
+    {
+        title: "Express",
+        src: "/express1.png",
+    },
+    {
+        title: "Hibernate",
+        src: "/hibernate.png",
+    },
+    {
+        title: "MyBatis",
+        src: "/mybatis2.png",
+    },
+    {
+        title: "JavaFX",
+        src: "/javaFx.png",
+    },
+    {
+        title: "JSP",
+        src: "/jsp.png",
+    },
+    {
+        title: "TailwindCSS",
+        src: "/tailwindcss.png",
+    },
+
 ];
 
 export const dataTools = [
@@ -232,10 +261,6 @@ export const dataTools = [
     {
         title: "Maven",
         src: "/maven.png",
-    },
-    {
-        title: "TailwindCSS",
-        src: "/tailwindcss.png",
     },
     {
         title: "MySQL",
