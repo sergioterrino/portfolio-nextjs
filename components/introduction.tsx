@@ -9,7 +9,7 @@ const Introduction = () => {
     <div className='z-20 w-full bg-darkBg/60'>
       <div className="z-20 grid items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
         <Image src="/images/avatar2.png" priority alt='profile picture' width="450" height="450"
-          className='mx-auto pt-4' />
+          className='mx-auto pt-4 animate-levitate' />
         <div className="flex flex-col justify-center max-w-lg">
           <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Si puedes pensarlo,
             <TypeAnimation

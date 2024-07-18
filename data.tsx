@@ -275,6 +275,10 @@ export const dataTools = [
         src: "/postman.svg",
     },
     {
+        title: 'MongoDB',
+        src: '/mongodb.png'
+    },
+    {
         title: "JasperReports",
         src: "/jasperreports.png",
     },
@@ -282,15 +286,7 @@ export const dataTools = [
 
 export const dataPortfolio = [
     {
-        id: 2,
-        title: "Juego online - Guess Who?",
-        description: ["Javascript", "Html", "Css"],
-        image: "/adivinaquien.png",
-        urlGithub: "",
-        urlDemo: "https://adivinaquien.netlify.app/",
-    },
-    {
-        id: 1,
+        id: 4,
         title: "Juego online - Guess Where?",
         description: ["Angular", "Typescript", "Html", "Css"],
         image: "/adivinadonde2.png",
@@ -306,13 +302,22 @@ export const dataPortfolio = [
         urlDemo: "https://stb-politik.netlify.app/",
     },
     {
-        id: 4,
+        id: 2,
         title: "Ionic mobile app",
         description: ["Ionic", "Firebase", "Angular", "Typescript"],
         image: "/seres2.jpg",
         urlGithub: "",
         urlDemo: "",
     },
+    {
+        id: 1,
+        title: "Juego online - Guess Who?",
+        description: ["Javascript", "Html", "Css"],
+        image: "/adivinaquien.png",
+        urlGithub: "",
+        urlDemo: "https://adivinaquien.netlify.app/",
+    },
+
     // {
     //     id: 5,
     //     title: "Webs Impactantes",

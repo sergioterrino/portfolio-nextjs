@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
   color: #fff;
   background: #1f1934;
 }
@@ -17,4 +18,24 @@ main {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@keyframes levitate {
+
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, 10px);
+  }
+  50% {
+    transform: translate(-10px, -10px);
+  }
+  75% {
+    transform: translate(10px, 10px);
+  }
+}
+
+.animate-levitate {
+  animation: levitate 6s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 }
