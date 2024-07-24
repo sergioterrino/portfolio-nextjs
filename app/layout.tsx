@@ -37,11 +37,11 @@ export default function RootLayout({
         <meta property="og:description" content="Portfolio Web made by Sergio Terrino - Desarrollador y Programador Web y Móvil" />
         <meta property="og:url" content="https://stb-portfolio.netlify.app/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="../public/images/projects/portfolio.png" />
+        <meta property="og:image" content="https://github.com/user-attachments/assets/7a0738ee-e4aa-4b4c-bf2d-7cc0bde1ccd1" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Tu Portfolio" />
         <meta name="twitter:description" content="App & Mobile Developer" />
-        <meta name="twitter:image" content="../public/images/projects/portfolio.png" />
+        <meta name="twitter:image" content="https://github.com/user-attachments/assets/7a0738ee-e4aa-4b4c-bf2d-7cc0bde1ccd1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body className={urbanist.className}>
