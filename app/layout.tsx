@@ -30,7 +30,9 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <title>Sergio Terrino - Portfolio Web</title>
+        <meta name="title" content="Sergio Terrino - Portfolio Web" />
         <meta name="description" content="Portfolio Web made by Sergio Terrino - Desarrollador y Programador Web y Móvil" />
+        <meta name="image" content="https://github.com/user-attachments/assets/7a0738ee-e4aa-4b4c-bf2d-7cc0bde1ccd1" />
         <meta name="title" property="og:title" content="Sergio Terrino - Portfolio Web" />
         <meta name="description" property="og:description" content="Portfolio Web made by Sergio Terrino - Desarrollador y Programador Web y Móvil" />
         <meta property="og:url" content="https://stb-portfolio.netlify.app/" />
