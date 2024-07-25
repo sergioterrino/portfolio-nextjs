@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 
 import { useState } from 'react';
@@ -11,6 +12,7 @@ interface PortfolioBoxProps {
     id: number;
     title: string;
     description: string[];
+    logos: string[];
     image: string;
     urlGithub: string;
     urlDemo: string;
@@ -19,7 +21,7 @@ interface PortfolioBoxProps {
 
 const PortfolioBox = (props: PortfolioBoxProps) => {
   const { data } = props;
-  const { id, title, description, image, urlGithub, urlDemo } = data;
+  const { id, title, description, logos, image, urlGithub, urlDemo } = data;
 
   // Estado para controlar la visibilidad del popover
   const [showPopover, setShowPopover] = useState(false);
@@ -49,65 +51,69 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
   }
 
   return (
-    <div
-      key={id}
-      className="p-4 border mx-1/2 sm:m-auto md:m-auto border-teal-50 rounded-xl text-center relative w-[94%]"
-    >
-      <h3 className="mb-4 text-xl font-bold">{title}</h3>
-      <Image
-        src={"/images/projects" + image}
-        alt="Image"
-        width={400} height={400} className=" w-full md:w-[500px] rounded-2xl h-64"
-      />
-      <div className="flex justify-center  gap-4">
-        {description.map((item, index) => (
-          <p key={index} className="my-4 px-2 py-1/2 border rounded-lg border-purple-950 bg-gray-400 text-purple-950 font-bold flex items-center justify-center">{item}</p>
-        ))}
+    <div key={id} className="group relative cursor-pointer items-center justify-center 
+        overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 shadow-2xl shadow-indigo-900">
+      <div className="h-[calc(65vh-100px)] w-full">
+        <img className="w-full h-full object-cover transition-transform duration-500 
+            group-hover:rotate-3 group-hover:scale-125" src={'/images/projects' + image} alt={'project ' + title} />
       </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent
+           to-black group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/70">
+      </div>
+      <div className="absolute inset-0 flex translate-y-[100%] flex-col items-center 
+          justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+        <h1 className="font-dmserif text-3xl font-bold text-white mb-3">{title}</h1>
+        <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-pretty">
+          {description}</p>
+        <div className='flex gap-x-3 mb-3'>
+          {logos.map((logo, i) => (
+            <img key={i} src={"https://skillicons.dev/icons?i=" + logo + "&perline=14"} className='w-10 h-10' />
+          ))}
+        </div>
+        <div className="relative flex gap-5 mt-1 justify-center"> {/* Contenedor de botones con posición relativa */}
+          <Link
+            href={urlGithub || "#"}
+            target={urlGithub ? "_blank" : "_self"}
+            className="p-2 transition duration-150 rounded-full bg-neutral-900 shadow shadow-black/60 hover:bg-slate-500/80 relative"
+            onClick={handleClickGithub}
+          >
+            Github
+          </Link>
 
-      <div className="relative flex gap-5 mt-1 justify-center"> {/* Contenedor de botones con posición relativa */}
-        <Link
-          href={urlGithub || "#"}
-          target={urlGithub ? "_blank" : "_self"}
-          className="p-2 transition duration-150 rounded-lg bg-slate-500 hover:bg-slate-500/80 relative"
-          onClick={handleClickGithub}
-        >
-          Github
-        </Link>
+          {/* Popover en vez de Toast */}
+          {showPopover && (
+            <div className="absolute w-96 bottom-20 left-50% mt-2 p-4 bg-red-500 text-white text-xl rounded-lg shadow-lg z-10">
+              Actualmente este repositorio es privado
+            </div>
+          )}
 
-        {/* Popover en vez de Toast */}
-        {showPopover && (
-          <div className="absolute bottom-48 left-50% mt-2 p-4 bg-red-500 text-white text-xl rounded-lg shadow-lg z-10">
-            Actualmente este repositorio es privado
-          </div>
-        )}
+          {showPopoverDemo && (
+            <div className="absolute w-96 bottom-20 left-50% mt-2 p-4 bg-gray-600 text-white text-xl rounded-lg shadow-lg z-10">
+              Actualmente este proyecto es privado
+            </div>
+          )}
 
-        {showPopoverDemo && (
-          <div className="absolute bottom-48 left-50% mt-2 p-4 bg-gray-600 text-white text-xl rounded-lg shadow-lg z-10">
-            Actualmente este proyecto es privado
-          </div>
-        )}
+          <ToastContainer
+            position="top-center"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
 
-        <ToastContainer
-          position="top-center"
-          autoClose={3000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-        />
-
-        <Link
-          href={urlDemo}
-          target="_blank"
-          className="p-2 transition duration-150 rounded-lg bg-secondary hover:bg-secondary/80"
-          onClick={checkUrlDemo}
-        >
-          Live demo
-        </Link>
+          <Link
+            href={urlDemo}
+            target="_blank"
+            className="p-2 transition capitalize duration-150 rounded-full shadow shadow-black/60 bg-secondary hover:bg-secondary/80"
+            onClick={checkUrlDemo}
+          >
+            Live demo
+          </Link>
+        </div>
       </div>
     </div>
   );

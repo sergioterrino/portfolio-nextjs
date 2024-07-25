@@ -288,15 +288,17 @@ export const dataPortfolio = [
     {
         id: 4,
         title: "Juego online - Guess Where?",
-        description: ["Angular", "Typescript", "Html", "Css"],
+        description: "Juego online tipo Quiz en el que tienes que adivinar la ubicación de un lugar antes de que acabe el tiempo.",
+        logos: ["angular", "ts", "html", "css"],
         image: "/adivinadonde2.png",
-        urlGithub: "",
+        urlGithub: "https://github.com/sergioterrino/guesswhere",
         urlDemo: "https://adivinadonde.netlify.app/",
     },
     {
         id: 3,
         title: "Customized Twitter",
-        description: ["Java", "Spring Boot", "Angular", "Spring Security"],
+        description: "Clon Politik de Twitter con funcionalidades básicas como publicar tweets, seguir a otros usuarios, dar like a tweets, etc.",
+        logos: ["java", "spring", "angular", "mysql", "hibernate", "maven"],
         image: "/politik.png",
         urlGithub: "https://github.com/sergioterrino/politik",
         urlDemo: "https://stb-politik.netlify.app/",
@@ -304,7 +306,8 @@ export const dataPortfolio = [
     {
         id: 2,
         title: "Ionic mobile app",
-        description: ["Ionic", "Firebase", "Angular", "Typescript"],
+        description: "Aún no puedo dar detalles pues está en fase de comercialización.",
+        logos: ["angular", "ts", "firebase"],
         image: "/seres2.jpg",
         urlGithub: "",
         urlDemo: "",
@@ -312,33 +315,12 @@ export const dataPortfolio = [
     {
         id: 1,
         title: "Juego online - Guess Who?",
-        description: ["Javascript", "Html", "Css"],
+        description: "Juego online tipo Quiz en el que tienes que adivinar qué cantante escribió el verso antes de 10 segundos.",
+        logos: ["js", "html", "css", "netlify"],
         image: "/adivinaquien.png",
-        urlGithub: "",
+        urlGithub: "https://github.com/sergioterrino/guesswho",
         urlDemo: "https://adivinaquien.netlify.app/",
     },
-
-    // {
-    //     id: 5,
-    //     title: "Webs Impactantes",
-    //     image: "/image-5.jpg",
-    //     urlGithub: "#!",
-    //     urlDemo: "#!",
-    // },
-    // {
-    //     id: 6,
-    //     title: "Web Dinámica",
-    //     image: "/image-6.jpg",
-    //     urlGithub: "#!",
-    //     urlDemo: "#!",
-    // },
-    // {
-    //     id: 7,
-    //     title: "Dark Web ",
-    //     image: "/image-7.jpg",
-    //     urlGithub: "#!",
-    //     urlDemo: "#!",
-    // },
 ];
 
 export const dataTestimonials = [

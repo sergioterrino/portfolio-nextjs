@@ -42,7 +42,7 @@ export default function RootLayout({
         <meta name="twitter:title" content="Sergio Terrino - Portfolio Web" />
         <meta name="twitter:description" content="Portfolio Web made by Sergio Terrino - Desarrollador y Programador Web y Móvil" />
         <meta name="twitter:image" content="https://github.com/user-attachments/assets/7a0738ee-e4aa-4b4c-bf2d-7cc0bde1ccd1" />
-        <meta name="author" content="[Sergio Terrino Brea"></meta>
+        <meta name="author" content="Sergio Terrino Brea"></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body className={urbanist.className}>
