@@ -16,7 +16,7 @@ const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Sergio Terrino - Portfolio Web",
-  description: "Portfolio Web made by Sergio Terrino - Desarrollador y Programador Web con 2 años de experiencia",
+  description: "Portfolio Web made by Sergio Terrino - Desarrollador y Programador Web",
 };
 
 // En el layout se pone el header y el footer de la página. Ya que estos elementos se repiten en todas las páginas.
