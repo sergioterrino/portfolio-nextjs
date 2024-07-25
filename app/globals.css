@@ -39,3 +39,16 @@ main {
 .animate-levitate {
   animation: levitate 6s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 }
+
+.mask-gradient {
+  mask-image: linear-gradient(to bottom, black 97%, transparent);
+}
+
+.mask-gradient-techs {
+  mask-image: 
+    linear-gradient(to bottom, transparent, black 20%, black 80%, transparent),
+    linear-gradient(to top, transparent, black 20%, black 80%, transparent),
+    linear-gradient(to right, transparent, black 20%, black 80%, transparent),
+    linear-gradient(to left, transparent, black 20%, black 80%, transparent);
+  mask-composite: intersect;
+}

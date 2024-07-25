@@ -11,7 +11,7 @@ interface PortfolioBoxProps {
   data: {
     id: number;
     title: string;
-    description: string[];
+    description: string;
     logos: string[];
     image: string;
     urlGithub: string;
@@ -51,23 +51,22 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
   }
 
   return (
-    <div key={id} className="group relative cursor-pointer items-center justify-center 
+    <div key={id} className="mask-gradient group relative cursor-pointer items-center justify-center 
         overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 shadow-2xl shadow-indigo-900">
       <div className="h-[calc(65vh-100px)] w-full">
         <img className="w-full h-full object-cover transition-transform duration-500 
-            group-hover:rotate-3 group-hover:scale-125" src={'/images/projects' + image} alt={'project ' + title} />
+        group-hover:rotate-3 group-hover:scale-125" src={'/images/projects' + image} alt={'project ' + title} />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent
-           to-black group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/70">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-indigo-950/10 group-hover:from-black/100 group-hover:via-black/60 group-hover:to-black/70 transition-opacity duration-500 opacity-100 group-hover:opacity-100">
       </div>
       <div className="absolute inset-0 flex translate-y-[100%] flex-col items-center 
-          justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+      justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
         <h1 className="font-dmserif text-3xl font-bold text-white mb-3">{title}</h1>
         <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-pretty">
           {description}</p>
         <div className='flex gap-x-3 mb-3'>
           {logos.map((logo, i) => (
-            <img key={i} src={"https://skillicons.dev/icons?i=" + logo + "&perline=14"} className='w-10 h-10' />
+            <img key={i} src={"https://skillicons.dev/icons?i=" + logo + "&perline=14"} alt={'project '+title} className='w-10 h-10' />
           ))}
         </div>
         <div className="relative flex gap-5 mt-1 justify-center"> {/* Contenedor de botones con posición relativa */}
