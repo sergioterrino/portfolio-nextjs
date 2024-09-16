@@ -118,20 +118,20 @@ export const dataCounter = [
     // },
     {
         id: 3,
-        endCounter: 4,
+        endCounter: 8,
         text: "Proyectos finalizados",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 4,
-        endCounter: 12,
+        endCounter: 14,
         text: "Frameworks",
         lineRight: false,
         lineRightMobile: false,
     },
     // Frameworks --> Spring, SpringBoot, JSP, JavaFX, MyBatis, Hibernate,  
-    // Angular, Ionic, Express, React, NextJs, TailwindCSS
+    // Angular, Ionic, Express, React, NextJs, TailwindCSS, Django, Bootstrap
 
     // {
     //     id: 3,
@@ -242,6 +242,14 @@ export const dataFrameworks = [
         title: "TailwindCSS",
         src: "/tailwindcss.png",
     },
+    {
+        title: "Django",
+        src: "/django.svg",
+    },
+    {
+        title: "Bootstrap",
+        src: "/bootstrap.png",
+    },
 
 ];
 
@@ -285,6 +293,16 @@ export const dataTools = [
 ];
 
 export const dataPortfolio = [
+    {
+        id: 5,
+        title: "Sorting Hat",
+        description: "Aplicación web para crear y compartir encuestas. Los usuarios pueden ver los resultados en tiempo real a modo de gráficos interactivos.",
+        logos: ["py", "react", "django", "mysql", "tailwindcss"],
+        image: "/sortingHat.webp",
+        urlGithub: "https://github.com/sergioterrino/surveys-app",
+        urlDemo: "",
+    },
+    // shot.so opacity 43; scale 70
     {
         id: 5,
         title: "Tasks Manager",
