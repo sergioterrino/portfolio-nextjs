@@ -25,7 +25,7 @@ const Introduction = () => {
             />
           </h1>
           <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8 w-128">
-            Soy <span className='font-bold'>desarrollador Full Stack</span> jr.<br/>
+            Soy <span className='font-bold'>Backend Developer</span><br/>
             Transformo ideas en realidad digital.
             También estoy comenzando a crear contenido en redes, pues ya saben lo que dicen:&nbsp;  
             <span className='font-bold'>&quot;Uno enseña, dos aprenden&quot;</span>. <br />
