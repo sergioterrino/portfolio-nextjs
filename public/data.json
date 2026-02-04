@@ -88,57 +88,57 @@
   "languages": [
     {
       "title": "Java",
-      "src": "/images/java.png"
+      "src": "/portfolio-nextjs/images/java.png"
     },
     {
       "title": "Python",
-      "src": "/images/python.png"
+      "src": "/portfolio-nextjs/images/python.png"
     },
     {
       "title": "JavaScript",
-      "src": "/images/javascript.png"
+      "src": "/portfolio-nextjs/images/javascript.png"
     },
     {
       "title": "TypeScript",
-      "src": "/images/typescript.png"
+      "src": "/portfolio-nextjs/images/typescript.png"
     },
     {
       "title": "SQL",
-      "src": "/images/sql.png"
+      "src": "/portfolio-nextjs/images/sql.png"
     }
   ],
   "frameworks": [
     {
       "title": "Spring",
-      "src": "/images/spring1.png"
+      "src": "/portfolio-nextjs/images/spring1.png"
     },
     {
       "title": "SpringBoot",
-      "src": "/images/springboot.png"
+      "src": "/portfolio-nextjs/images/springboot.png"
     },
     {
       "title": "Angular",
-      "src": "/images/angular.png"
+      "src": "/portfolio-nextjs/images/angular.png"
     },
     {
       "title": "TailwindCSS",
-      "src": "/images/tailwindcss.png"
+      "src": "/portfolio-nextjs/images/tailwindcss.png"
     },
     {
       "title": "Apache Kafka",
-      "src": "/images/kafka.png"
+      "src": "/portfolio-nextjs/images/kafka.png"
     },
     {
       "title": "Apache Airflow",
-      "src": "/images/airflow.png"
+      "src": "/portfolio-nextjs/images/airflow.png"
     },
     {
       "title": "Django",
-      "src": "/images/django.svg"
+      "src": "/portfolio-nextjs/images/django.svg"
     },
     {
       "title": "JavaFX",
-      "src": "/images/javaFx.png"
+      "src": "/portfolio-nextjs/images/javaFx.png"
     }
   ],
   "services": [
@@ -166,11 +166,11 @@
   "tools": [
     {
       "title": "HTML",
-      "src": "/images/html.png"
+      "src": "/portfolio-nextjs/images/html.png"
     },
     {
       "title": "CSS",
-      "src": "/images/css.png"
+      "src": "/portfolio-nextjs/images/css.png"
     },
     {
       "title": "Google Cloud",
@@ -178,35 +178,35 @@
     },
     {
       "title": "Git",
-      "src": "/images/git.png"
+      "src": "/portfolio-nextjs/images/git.png"
     },
     {
       "title": "Maven",
-      "src": "/images/maven.png"
+      "src": "/portfolio-nextjs/images/maven.png"
     },
     {
       "title": "MySQL",
-      "src": "/images/mysql.png"
+      "src": "/portfolio-nextjs/images/mysql.png"
     },
     {
       "title": "Firebase",
-      "src": "/images/firebase.png"
+      "src": "/portfolio-nextjs/images/firebase.png"
     },
     {
       "title": "Postman",
-      "src": "/images/postman.svg"
+      "src": "/portfolio-nextjs/images/postman.svg"
     },
     {
       "title": "MongoDB",
-      "src": "/images/mongodb.png"
+      "src": "/portfolio-nextjs/images/mongodb.png"
     },
     {
       "title": "Docker",
-      "src": "/images/docker.png"
+      "src": "/portfolio-nextjs/images/docker.png"
     },
     {
       "title": "GitLab",
-      "src": "/images/gitlab.png"
+      "src": "/portfolio-nextjs/images/gitlab.png"
     }
   ],
   "portfolio": [
@@ -215,7 +215,7 @@
       "title": "Sorting Hat",
       "description": "Aplicación web para crear y compartir encuestas. Los usuarios pueden ver los resultados en tiempo real a modo de gráficos interactivos.",
       "logos": ["py", "react", "django", "mysql", "tailwindcss"],
-      "image": "/images/sortingHat.webp",
+      "image": "/portfolio-nextjs/images/sortingHat.webp",
       "urlGithub": "https://github.com/sergioterrino/surveys-app",
       "urlDemo": ""
     },
@@ -224,7 +224,7 @@
       "title": "Tasks Manager",
       "description": "Aplicación web para gestionar tareas. Permite crear, editar y eliminar las tareas.",
       "logos": ["nodejs", "react", "express", "mongodb", "tailwindcss"],
-      "image": "/images/tasksManager.webp",
+      "image": "/portfolio-nextjs/images/tasksManager.webp",
       "urlGithub": "https://github.com/sergioterrino/tasksManager-backend",
       "urlDemo": "https://tasksmanager-frontend.onrender.com/"
     },
@@ -233,7 +233,7 @@
       "title": "Customized Twitter",
       "description": "Clon Politik de Twitter con funcionalidades básicas como publicar tweets, seguir a otros usuarios, dar like a tweets, etc.",
       "logos": ["java", "spring", "angular", "mysql", "hibernate", "maven"],
-      "image": "/images/politik.webp",
+      "image": "/portfolio-nextjs/images/politik.webp",
       "urlGithub": "https://github.com/sergioterrino/politik",
       "urlDemo": "https://stb-politik.netlify.app/"
     },
@@ -242,7 +242,7 @@
       "title": "Juego Online - Guess Where?",
       "description": "Juego online tipo Quiz en el que tienes que adivinar la ubicación de un lugar antes de que acabe el tiempo.",
       "logos": ["angular", "ts", "html", "css"],
-      "image": "/images/adivinadonde.webp",
+      "image": "/portfolio-nextjs/images/adivinadonde.webp",
       "urlGithub": "https://github.com/sergioterrino/guesswhere",
       "urlDemo": "https://adivinadonde.netlify.app/"
     },
@@ -251,7 +251,7 @@
       "title": "Ionic Mobile App",
       "description": "Aún no puedo dar detalles pues está en fase de comercialización.",
       "logos": ["angular", "ts", "firebase"],
-      "image": "/images/seresbg.png",
+      "image": "/portfolio-nextjs/images/seresbg.png",
       "urlGithub": "",
       "urlDemo": ""
     },
@@ -260,7 +260,7 @@
       "title": "Juego Online - Guess Who?",
       "description": "Juego online tipo Quiz en el que tienes que adivinar qué cantante escribió el verso antes de 10 segundos.",
       "logos": ["js", "html", "css", "netlify"],
-      "image": "/images/adivinaquien.webp",
+      "image": "/portfolio-nextjs/images/adivinaquien.webp",
       "urlGithub": "https://github.com/sergioterrino/guesswho",
       "urlDemo": "https://adivinaquien.netlify.app/"
     }
@@ -270,37 +270,37 @@
       "id": 1,
       "name": "George Snow",
       "description": "¡Increíble plataforma! Los testimonios aquí son genuinos y me han ayudado a tomar decisiones informadas. ¡Altamente recomendado!",
-      "imageUrl": "/images/profile1.png"
+      "imageUrl": "/portfolio-nextjs/images/profile1.png"
     },
     {
       "id": 2,
       "name": "Juan Pérez",
       "description": "Me encanta la variedad de testimonios disponibles en esta página. Es inspirador ver cómo otras personas han superado desafíos similares a los míos. ¡Gracias por esta invaluable fuente de motivación!",
-      "imageUrl": "/images/profile2.png"
+      "imageUrl": "/portfolio-nextjs/images/profile2.png"
     },
     {
       "id": 3,
       "name": "María García",
       "description": "Excelente recurso para obtener opiniones auténticas sobre diferentes productos y servicios. Me ha ayudado mucho en mis compras en línea. ¡Bravo por este sitio!",
-      "imageUrl": "/images/profile3.png"
+      "imageUrl": "/portfolio-nextjs/images/profile3.png"
     },
     {
       "id": 4,
       "name": "Laura Snow",
       "description": "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. Me siento más seguro al tomar decisiones después de leer las experiencias compartidas por otros usuarios.",
-      "imageUrl": "/images/profile4.png"
+      "imageUrl": "/portfolio-nextjs/images/profile4.png"
     },
     {
       "id": 5,
       "name": "Carlos Sánchez",
       "description": "Una joya en la web. Los testimonios son fáciles de encontrar y están bien organizados. ¡Definitivamente mi destino número uno cuando necesito referencias confiables!",
-      "imageUrl": "/images/profile5.png"
+      "imageUrl": "/portfolio-nextjs/images/profile5.png"
     },
     {
       "id": 6,
       "name": "Antonio Martínez",
       "description": "¡Fantástico recurso para aquellos que buscan validación antes de tomar decisiones importantes! Los testimonios aquí son veraces y realmente útiles. ¡Gracias por simplificar mi proceso de toma de decisiones!",
-      "imageUrl": "/images/profile6.png"
+      "imageUrl": "/portfolio-nextjs/images/profile6.png"
     }
   ]
 }
