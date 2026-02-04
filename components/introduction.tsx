@@ -1,14 +1,22 @@
 "use client"
 
-import Image from 'next/image'
 import Link from 'next/link';
 import { TypeAnimation } from 'react-type-animation';
+import { useEffect, useState } from 'react';
 
 const Introduction = () => {
+  const [basePath, setBasePath] = useState('');
+  
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.location.hostname.includes('github.io')) {
+      setBasePath('/portfolio-nextjs');
+    }
+  }, []);
+
   return (
     <div className='z-20 w-full bg-darkBg/60'>
       <div className="z-20 grid items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
-        <Image src="/images/avatar2.png" priority alt='profile picture' width="450" height="450"
+        <img src={`${basePath}/images/avatar2.png`} alt='profile picture' width="450" height="450"
           className='mx-auto pt-4 animate-levitate' />
         <div className="flex flex-col justify-center max-w-lg">
           <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Si puedes pensarlo,
