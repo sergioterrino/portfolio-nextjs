@@ -82,7 +82,7 @@ const SliderTechnologies = ({ data }: { data: any[] }) => {
           <div className="flex px-6 py-8 h-auto md:h-[150px] rounded-lg mask-gradient-techs cursor-pointer bg-[rgba(65,47,123,0.15)] 
           sm:flex-col gap-x-6 sm:gap-x-0 group hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 ">
             <div className="mb-0 m-auto text-secondary">
-              <Image src={"/images" + item.src} width={100} height={100} className="m-auto h-20" alt={item.title} />
+              <Image src={item.src} width={100} height={100} className="m-auto h-20" alt={item.title} />
               <div className="absolute top-12 right-0 w-full text-center text-lg bg-black bg-opacity-70 text-white font-bold py-3 opacity-0 hover:opacity-100 transition-opacity duration-300">
                 {item.title}
               </div>
