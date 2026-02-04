@@ -19,13 +19,21 @@ interface PortfolioBoxProps {
 const PortfolioBox = (props: PortfolioBoxProps) => {
   const { data } = props;
   const { id, title, description, image, urlGithub, urlDemo } = data;
-  const [basePath, setBasePath] = useState('');
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.location.hostname.includes('github.io')) {
-      setBasePath('/portfolio-nextjs');
-    }
+    setIsClient(true);
   }, []);
+
+  const resolveImagePath = (path: string) => {
+    if (!isClient) return path;
+    // En GitHub Pages
+    if (window.location.hostname.includes('github.io')) {
+      return `/portfolio-nextjs${path.replace('/portfolio-nextjs', '')}`;
+    }
+    // En localhost
+    return path.replace('/portfolio-nextjs', '');
+  };
 
   // Estado para controlar la visibilidad del popover
   const [showPopover, setShowPopover] = useState(false);
@@ -61,7 +69,7 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
     >
       <h3 className="mb-4 text-xl font-bold">{title}</h3>
       <img
-        src={basePath ? `${basePath}${image.replace('/portfolio-nextjs', '')}` : image}
+        src={resolveImagePath(image)}
         alt="Image"
         width={400} height={400} className=" w-full md:w-[500px] rounded-2xl h-64"
       />
