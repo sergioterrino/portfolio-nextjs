@@ -1,4 +1,8 @@
 export const getImagePath = (path: string): string => {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  return basePath ? `${basePath}${path}` : path;
+  // En GitHub Pages, siempre usar el basePath
+  if (typeof window !== 'undefined' && window.location.hostname.includes('github.io')) {
+    return `/portfolio-nextjs${path}`;
+  }
+  // En localhost, usar la ruta directa
+  return path;
 };
