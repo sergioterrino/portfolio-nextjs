@@ -61,7 +61,7 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
         overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 shadow-2xl shadow-indigo-900">
       <div className="h-[calc(65vh-100px)] w-full">
         <img className="w-full h-full object-cover transition-transform duration-500 
-        group-hover:rotate-3 group-hover:scale-125" src={`${basePath}/images/projects${image}`} alt={'project ' + title} />
+        group-hover:rotate-3 group-hover:scale-125" src={basePath ? `${basePath}${image.replace('/portfolio-nextjs', '')}` : image} alt={'project ' + title} />
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-indigo-950/10 group-hover:from-black/100 group-hover:via-black/60 group-hover:to-black/70 transition-opacity duration-500 opacity-100 group-hover:opacity-100">
       </div>

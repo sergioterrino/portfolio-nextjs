@@ -61,7 +61,7 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
     >
       <h3 className="mb-4 text-xl font-bold">{title}</h3>
       <img
-        src={`${basePath}/images/projects${image}`}
+        src={basePath ? `${basePath}${image.replace('/portfolio-nextjs', '')}` : image}
         alt="Image"
         width={400} height={400} className=" w-full md:w-[500px] rounded-2xl h-64"
       />
