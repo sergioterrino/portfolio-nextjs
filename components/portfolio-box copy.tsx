@@ -1,7 +1,6 @@
 "use client"
 
-import { useState } from 'react';
-import Image from "next/image";
+import { useState, useEffect } from 'react';
 import Link from "next/link";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -20,6 +19,13 @@ interface PortfolioBoxProps {
 const PortfolioBox = (props: PortfolioBoxProps) => {
   const { data } = props;
   const { id, title, description, image, urlGithub, urlDemo } = data;
+  const [basePath, setBasePath] = useState('');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.location.hostname.includes('github.io')) {
+      setBasePath('/portfolio-nextjs');
+    }
+  }, []);
 
   // Estado para controlar la visibilidad del popover
   const [showPopover, setShowPopover] = useState(false);
@@ -54,8 +60,8 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
       className="p-4 border mx-1/2 sm:m-auto md:m-auto border-teal-50 rounded-xl text-center relative w-[94%]"
     >
       <h3 className="mb-4 text-xl font-bold">{title}</h3>
-      <Image
-        src={"/images/projects" + image}
+      <img
+        src={`${basePath}/images/projects${image}`}
         alt="Image"
         width={400} height={400} className=" w-full md:w-[500px] rounded-2xl h-64"
       />
