@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "endCounter": 6,
+      "endCounter": 5,
       "text": "Lenguajes de programación",
       "lineRight": true,
       "lineRightMobile": true
@@ -79,7 +79,7 @@
     },
     {
       "id": 4,
-      "endCounter": 18,
+      "endCounter": 8,
       "text": "Frameworks",
       "lineRight": false,
       "lineRightMobile": false
@@ -95,23 +95,23 @@
       "src": "/portfolio-nextjs/images/python.png"
     },
     {
+      "title": "Google Cloud",
+      "src": "/portfolio-nextjs/images/gcloud.png"
+    },
+    {
       "title": "JavaScript",
       "src": "/portfolio-nextjs/images/javascript.png"
     },
     {
-      "title": "TypeScript",
-      "src": "/portfolio-nextjs/images/typescript.png"
-    },
-    {
       "title": "SQL",
       "src": "/portfolio-nextjs/images/sql.png"
+    },
+    {
+      "title": "TypeScript",
+      "src": "/portfolio-nextjs/images/typescript.png"
     }
   ],
   "frameworks": [
-    {
-      "title": "Spring",
-      "src": "/portfolio-nextjs/images/spring1.png"
-    },
     {
       "title": "SpringBoot",
       "src": "/portfolio-nextjs/images/springboot.png"
@@ -121,24 +121,70 @@
       "src": "/portfolio-nextjs/images/angular.png"
     },
     {
-      "title": "TailwindCSS",
-      "src": "/portfolio-nextjs/images/tailwindcss.png"
-    },
-    {
       "title": "Apache Kafka",
       "src": "/portfolio-nextjs/images/kafka.png"
     },
     {
       "title": "Apache Airflow",
       "src": "/portfolio-nextjs/images/airflow.png"
+    },    
+    {
+      "title": "Apache Beam",
+      "src": "/portfolio-nextjs/images/apachebeam.png"
     },
     {
       "title": "Django",
       "src": "/portfolio-nextjs/images/django.svg"
     },
     {
+      "title": "TailwindCSS",
+      "src": "/portfolio-nextjs/images/tailwindcss.png"
+    }
+  ],
+  "tools": [
+    {
+      "title": "HTML",
+      "src": "/portfolio-nextjs/images/html.png"
+    },
+    {
+      "title": "CSS",
+      "src": "/portfolio-nextjs/images/css.png"
+    },
+    {
+      "title": "Git",
+      "src": "/portfolio-nextjs/images/git.png"
+    },
+    {
+      "title": "Maven",
+      "src": "/portfolio-nextjs/images/maven.svg"
+    },
+    {
+      "title": "MongoDB",
+      "src": "/portfolio-nextjs/images/mongodb.webp"
+    },
+    {
+      "title": "Firebase",
+      "src": "/portfolio-nextjs/images/firebase.png"
+    },
+    {
+      "title": "Postman",
+      "src": "/portfolio-nextjs/images/postman.svg"
+    },
+    {
+      "title": "MySQL",
+      "src": "/portfolio-nextjs/images/mysql.png"
+    },
+    {
       "title": "JavaFX",
       "src": "/portfolio-nextjs/images/javaFx.png"
+    },
+    {
+      "title": "Docker",
+      "src": "/portfolio-nextjs/images/docker.png"
+    },
+    {
+      "title": "GitLab",
+      "src": "/portfolio-nextjs/images/gitlab.png"
     }
   ],
   "services": [
@@ -163,59 +209,13 @@
       "description": "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas"
     }
   ],
-  "tools": [
-    {
-      "title": "HTML",
-      "src": "/portfolio-nextjs/images/html.png"
-    },
-    {
-      "title": "CSS",
-      "src": "/portfolio-nextjs/images/css.png"
-    },
-    {
-      "title": "Google Cloud",
-      "src": "/gcloud.png"
-    },
-    {
-      "title": "Git",
-      "src": "/portfolio-nextjs/images/git.png"
-    },
-    {
-      "title": "Maven",
-      "src": "/portfolio-nextjs/images/maven.png"
-    },
-    {
-      "title": "MySQL",
-      "src": "/portfolio-nextjs/images/mysql.png"
-    },
-    {
-      "title": "Firebase",
-      "src": "/portfolio-nextjs/images/firebase.png"
-    },
-    {
-      "title": "Postman",
-      "src": "/portfolio-nextjs/images/postman.svg"
-    },
-    {
-      "title": "MongoDB",
-      "src": "/portfolio-nextjs/images/mongodb.png"
-    },
-    {
-      "title": "Docker",
-      "src": "/portfolio-nextjs/images/docker.png"
-    },
-    {
-      "title": "GitLab",
-      "src": "/portfolio-nextjs/images/gitlab.png"
-    }
-  ],
   "portfolio": [
     {
       "id": 6,
       "title": "Sorting Hat",
       "description": "Aplicación web para crear y compartir encuestas. Los usuarios pueden ver los resultados en tiempo real a modo de gráficos interactivos.",
       "logos": ["py", "react", "django", "mysql", "tailwindcss"],
-      "image": "/portfolio-nextjs/images/sortingHat.webp",
+      "image": "/portfolio-nextjs/images/projects/sortingHat.webp",
       "urlGithub": "https://github.com/sergioterrino/surveys-app",
       "urlDemo": ""
     },
@@ -224,16 +224,16 @@
       "title": "Tasks Manager",
       "description": "Aplicación web para gestionar tareas. Permite crear, editar y eliminar las tareas.",
       "logos": ["nodejs", "react", "express", "mongodb", "tailwindcss"],
-      "image": "/portfolio-nextjs/images/tasksManager.webp",
+      "image": "/portfolio-nextjs/images/projects/tasksManager.webp",
       "urlGithub": "https://github.com/sergioterrino/tasksManager-backend",
-      "urlDemo": "https://tasksmanager-frontend.onrender.com/"
+      "urlDemo": ""
     },
     {
       "id": 4,
       "title": "Customized Twitter",
       "description": "Clon Politik de Twitter con funcionalidades básicas como publicar tweets, seguir a otros usuarios, dar like a tweets, etc.",
       "logos": ["java", "spring", "angular", "mysql", "hibernate", "maven"],
-      "image": "/portfolio-nextjs/images/politik.webp",
+      "image": "/portfolio-nextjs/images/projects/politik.webp",
       "urlGithub": "https://github.com/sergioterrino/politik",
       "urlDemo": "https://stb-politik.netlify.app/"
     },
@@ -242,7 +242,7 @@
       "title": "Juego Online - Guess Where?",
       "description": "Juego online tipo Quiz en el que tienes que adivinar la ubicación de un lugar antes de que acabe el tiempo.",
       "logos": ["angular", "ts", "html", "css"],
-      "image": "/portfolio-nextjs/images/adivinadonde.webp",
+      "image": "/portfolio-nextjs/images/projects/adivinadonde.webp",
       "urlGithub": "https://github.com/sergioterrino/guesswhere",
       "urlDemo": "https://adivinadonde.netlify.app/"
     },
@@ -251,7 +251,7 @@
       "title": "Ionic Mobile App",
       "description": "Aún no puedo dar detalles pues está en fase de comercialización.",
       "logos": ["angular", "ts", "firebase"],
-      "image": "/portfolio-nextjs/images/seresbg.png",
+      "image": "/portfolio-nextjs/images/projects/seresbg.png",
       "urlGithub": "",
       "urlDemo": ""
     },
@@ -260,7 +260,7 @@
       "title": "Juego Online - Guess Who?",
       "description": "Juego online tipo Quiz en el que tienes que adivinar qué cantante escribió el verso antes de 10 segundos.",
       "logos": ["js", "html", "css", "netlify"],
-      "image": "/portfolio-nextjs/images/adivinaquien.webp",
+      "image": "/portfolio-nextjs/images/projects/adivinaquien.webp",
       "urlGithub": "https://github.com/sergioterrino/guesswho",
       "urlDemo": "https://adivinaquien.netlify.app/"
     }
